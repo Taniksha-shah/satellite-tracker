@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "satellite.js": "^6.0.1",
+    "three-globe": "^2.44.0"
+  }
+}

@@ -24,15 +24,9 @@ nav {
     padding : 25px;
     font-size: 15px;
 
-    /*font gradient*/
-    background: linear-gradient(to right, #4eacfd, #07ffb5);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-
     /*glassmorphism effect*/
-    backdrop-filter: blur(8px) brightness(1.1);
-    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px) brightness(0.5);
+    background-color: rgba(255, 255, 255, 0.096);
     border-radius: 18px;
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     border: 1px solid rgba(255, 255, 255, 0.18);
@@ -53,13 +47,18 @@ nav {
     text-decoration: none;
     list-style: none;
 }
+.title {
+  color: #1d64ce;
+}
 .space-stations,
 .tracked-satellites{
-    cursor: pointer;
-    transition: color 0.3s ease-in-out;
+  color: #07ffb5;
+  transition: text-shadow 0.3s ease-in-out;
 }
-li:hover {
-    color: white;
+.space-stations:hover,
+.tracked-satellites:hover {
+  cursor: pointer;
+  text-shadow: 0 0 8px #6ffdff, 0 0 16px #6ffdff;
 }
 #globe-div {
   /* Let the globe-div grow to fill all remaining vertical space */
