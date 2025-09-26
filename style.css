@@ -4,8 +4,21 @@
     font-family: monospace , sans-serif;
     box-sizing: border-box;
 }
+html {
+  height: 100%;
+  margin: 0; /* Important: Removes default browser margin */
+  overflow: hidden; /* Prevents scrollbars */
+}
 body {
-    background-color: rgb(7, 7, 42);
+  /* Set the body as a flex container */
+  display: flex;
+  flex-direction: column;
+  /* Ensure the body takes up the full viewport height */
+  height: 100vh;
+  /* Other styles from your code */
+  background-color: rgb(0, 0, 0);
+  margin: 0;
+  overflow: hidden;
 }
 nav {
     padding : 25px;
@@ -29,6 +42,9 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
+    position: relative;
+    z-index: 2;
 }
 .nav-items {
     display: flex;
@@ -44,4 +60,10 @@ nav {
 }
 li:hover {
     color: white;
+}
+#globe-div {
+  /* Let the globe-div grow to fill all remaining vertical space */
+  flex-grow: 1;
+  width: 100%;
+  margin: 0;
 }
